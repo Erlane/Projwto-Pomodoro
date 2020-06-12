@@ -1,13 +1,66 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* position: relative; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+section {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1.5rem;
+}
+
+.timePlay,
+.timePause,
+.timeStop {
+  width: 85px;
+  height: 30px;
+  border: 2px solid #000000;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.circle {
+  width: 18vw;
+  height: 35vh;
+  border-radius: 50%;
+  border: 1.2px solid #000000;
+  background-color: red;
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.paragraph {
+  /* color: red; */
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: center;
+}
+
+.time {
+  color: #FFFFFF;
+  font-size: 3.5rem;
+  display: flex;
+  justify-content: center;
+  position: inherit;
+  top: 50px;
+
 }
