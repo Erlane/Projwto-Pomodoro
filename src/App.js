@@ -1,38 +1,46 @@
 import React, { Component } from 'react';
 
 
-class App extends Component { 
-  constructor() {   
+class App extends Component {
+  constructor() {
     super()
     this.state = {
       time: 1500,
       timer: false,
-      
     }
   }
 
   startTime = () => {
-   this.timer = setInterval(() =>
-      this.setState({
-       time: this.state.time - 1,
-      }), 
-    1000);
+    if (this.state.timer === false) {
+      this.setState({ timer: true })
+      this.count = setInterval(() =>
+        this.setState({
+          time: this.state.time - 1,
+        }),
+        1000);
+    }
   }
-  
+
   pausedTime = () => {
-    clearInterval(this.startTime);
-      // timer: true,
+    clearInterval(this.count);
+    this.setState({
+      timer: false,
+    })
   }
 
   stopTime = () => {
-    clearTimeout(this.startTime);
-  }
+    clearInterval(this.count);
+      this.setState({
+        time: 1500,
+        timer: false,
+      })
+    }
 
- 
+
   render() {
     return (
-    <div className="container">
-        <h1>======== Meu Pomodoro ========</h1>
+      <div className="container">
+        <h1>Meu Pomodoro</h1>
         <section>
           <div className="timePlay" onClick={this.startTime}> PLAY </div>
           <div className="timePause" onClick={this.pausedTime}> PAUSE </div>
@@ -40,11 +48,11 @@ class App extends Component {
         </section>
         <div className="circle">
           <div className="content">
-              {/* <p className="paragraph">Sessão</p> */}
-    <p className="time">{Math.floor(this.state.time / 60)}:{this.state.time % 60 < 10 ? `0${this.state.time % 60}` : this.state.time % 60}</p>
+            {/* <p className="paragraph">Sessão</p> */}
+            <p className="time">{Math.floor(this.state.time / 60)}:{this.state.time % 60 < 10 ? `0${this.state.time % 60}` : this.state.time % 60}</p>
           </div>
         </div>
-    </div>
+      </div>
     );
   }
 }
