@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Projeto-Pomodoro/static/css/main.20e176d1.chunk.css",
+    "main.js": "/Projeto-Pomodoro/static/js/main.5f21ba35.chunk.js",
+    "main.js.map": "/Projeto-Pomodoro/static/js/main.5f21ba35.chunk.js.map",
+    "runtime-main.js": "/Projeto-Pomodoro/static/js/runtime-main.d444e523.js",
+    "runtime-main.js.map": "/Projeto-Pomodoro/static/js/runtime-main.d444e523.js.map",
+    "static/js/2.1b35cb52.chunk.js": "/Projeto-Pomodoro/static/js/2.1b35cb52.chunk.js",
+    "static/js/2.1b35cb52.chunk.js.map": "/Projeto-Pomodoro/static/js/2.1b35cb52.chunk.js.map",
+    "index.html": "/Projeto-Pomodoro/index.html",
+    "precache-manifest.433625237ec208114440f600dc2b0650.js": "/Projeto-Pomodoro/precache-manifest.433625237ec208114440f600dc2b0650.js",
+    "service-worker.js": "/Projeto-Pomodoro/service-worker.js",
+    "static/css/main.20e176d1.chunk.css.map": "/Projeto-Pomodoro/static/css/main.20e176d1.chunk.css.map",
+    "static/js/2.1b35cb52.chunk.js.LICENSE.txt": "/Projeto-Pomodoro/static/js/2.1b35cb52.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d444e523.js",
+    "static/js/2.1b35cb52.chunk.js",
+    "static/css/main.20e176d1.chunk.css",
+    "static/js/main.5f21ba35.chunk.js"
+  ]
+}
